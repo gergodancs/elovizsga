@@ -62,12 +62,38 @@ h1 {
   text-shadow: 0 3px 5px #777777;
 }
 
+.root:hover {
+  background-color: rgba(195, 188, 195, 0.486);
+}
+
+input::placeholder {
+  color: rgb(47, 161, 150);
+}
+.csekk {
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 700px) {
+  .inp input:hover {
+    width: 600px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   h1 {
     font-size: -0.5rem;
   }
   .inp input {
     height: 30px;
+    width: 300px;
+  }
+  .inp input:hover {
+    width: 450px;
+  }
+  button {
+    padding: 0.5rem 1.5rem;
+  }
+  .root {
     width: 400px;
   }
 }
@@ -78,19 +104,15 @@ h1 {
   }
   .inp input {
     height: 30px;
+    width: 200px;
+  }
+  .inp input:hover {
+    width: 250px;
+  }
+  button {
+    padding: 0.5rem;
+  }
+  .root {
     width: 300px;
   }
-}
-
-.root:hover {
-  background-color: rgba(195, 188, 195, 0.486);
-}
-.inp input:hover {
-  width: 600px;
-}
-input::placeholder {
-  color: rgb(47, 161, 150);
-}
-.csekk {
-  border-radius: 50%;
 }
