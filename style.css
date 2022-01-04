@@ -1,87 +1,96 @@
-body {
-  padding: 0;
-  margin: 0;
-  background-color: rgb(212, 208, 208);
-  display: flex;
-  justify-content: center;
-  color: rgb(68, 172, 128);
+* {
+  font-family: "Bakbak One", cursive;
+  font-family: "Oswald", sans-serif;
 }
-.kocka {
-  height: 100vh;
-  width: 500px;
+
+body {
+  background-color: rgb(228, 222, 228);
+  color: rgb(47, 161, 150);
   display: flex;
-  flex-wrap: wrap;
+
+  justify-content: center;
+  align-content: center;
+}
+.root {
+  margin-top: 60px;
+  height: 100vh;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  width: 700px;
+  height: 600px;
+  transition: 2s;
+  border-radius: 15px;
+  box-shadow: 0 3px 5px #777777;
 }
-.form {
+.flex-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-}
-.inp {
+  flex-direction: column;
   text-align: center;
-  background-color: white;
-  width: 500px;
-  height: 30px;
+  row-gap: 2rem;
+}
+
+.inp input {
+  height: 40px;
+  width: 400px;
   border-radius: 5px;
   border: 1px solid grey;
-  margin-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: px;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-  padding-left: 1rem;
-
-  align-content: center;
-}
-input {
-  border: none;
-  background-color: rgba(240, 248, 255, 0);
-}
-.label {
-  margin-bottom: 30px;
-}
-.btn {
-  margin-top: 50px;
+  padding-left: 10px;
+  font-size: 16px;
+  transition: 1s ease-in;
 }
 button {
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 70px;
   border-radius: 5px;
-  background-color: rgb(81, 190, 190);
   border: none;
+  background-color: rgb(57, 187, 174);
   color: white;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.4rem;
+  transition: 1s ease-in;
+  box-shadow: 0 3px 5px #777777;
+}
+button:hover {
+  background-color: rgb(168, 246, 238);
+  color: rgb(14, 136, 124);
+
+  letter-spacing: 1rem;
 }
 h1 {
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.4rem;
+  color: rgb(47, 161, 150);
+  letter-spacing: 0.2em;
+  text-shadow: 0 3px 5px #777777;
 }
-@media screen and (max-width: 600px) {
-  .inp {
-    text-align: center;
-    background-color: white;
-    width: 300px;
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: -0.5rem;
+  }
+  .inp input {
     height: 30px;
-    border-radius: 5px;
-    border: 1px solid grey;
-    margin-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-    padding-left: 1rem;
-
-    align-content: center;
+    width: 400px;
   }
-  .kocka {
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: -0.5rem;
+  }
+  .inp input {
+    height: 30px;
     width: 300px;
   }
+}
+
+.root:hover {
+  background-color: rgba(195, 188, 195, 0.486);
+}
+.inp input:hover {
+  width: 600px;
+}
+input::placeholder {
+  color: rgb(47, 161, 150);
+}
+.csekk {
+  border-radius: 50%;
 }

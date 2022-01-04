@@ -5,27 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login Page</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="kocka">
+    <div class="root">
+      <div class="flex-container">
         <h1>JELENTKEZÉS</h1>
-        <form action="" method="get">
-          <div class="inp">
-            <input type="text" name="" id="" placeholder="Név" />
-          </div>
-          <div class="inp">
-            <input type="email" name="" id="" placeholder="Email cím" />
-          </div>
+        <div class="inp">
+          <input type="text" placeholder="Név:" />
+        </div>
+        <div class="inp">
+          <input type="email" name="" id="" placeholder="Email:" />
+        </div>
+        <div class="inp.csek">
           <input type="checkbox" id="csekk" />
-          <label for="csekk"
-            >Elolvastam és elfogadom az adatkezelési tájékoztatót
+
+          <label for="csekk">
+            Elolvastam és elfogadom az
+            <a href="">adatkezelési tájékoztatót.</a> .
           </label>
-          <div class="btn">
-            <button>ELKÜLD</button>
-          </div>
-        </form>
+        </div>
+        <div class="btn">
+          <button>ELKÜLD</button>
+        </div>
       </div>
     </div>
   </body>
